@@ -24,8 +24,8 @@ To send emails via smtp you must set further settings.
 
 ## License
 
-©2016 Cory & Marc
+©2017 [Marc](https://github.com/karsasmus)
 
 This software is copyrighted. You may use it under the terms of the GNU GPLv3 or later. See LICENSE.md for licensing details.
 
-All code is copyright 2016 Cory & Marc except where noted. Third-party libraries are copyrighted and licensed by their respective owners.
+All code is copyright 2017 Marc except where noted. Third-party libraries are copyrighted and licensed by their respective owners.
