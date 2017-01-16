@@ -1,5 +1,7 @@
+# <img src="https://leafpub.org/content/uploads/2016/11/leafpub-logo-1.png" alt="Leafpub" width="300">
+
 # SwiftMailer
-Adds Swift Mailer as possible mailer to Leafpub
+Adds Swift Mailer as possible mailer to [Leafpub](https://github.com/Leafpub/leafpub)
 
 ## How do I enable SwiftMailer?
 
