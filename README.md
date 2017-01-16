@@ -6,7 +6,7 @@ Adds Swift Mailer as possible mailer to Leafpub
 After you activated the plugin, open Leafpub settings and switch to the advanced tab.
 Scroll down to "Sending e-mails" and choose "Swift Mailer".
 
-![Screenshot settings](./doc/SM_setting.png)
+![Screenshot settings](./doc/SM_settings.png)
 
 ## Which transport options are supported?
 
