@@ -1,0 +1,68 @@
+{{> header}}
+
+{{> menu}}
+
+{{!-- Toolbar --}}
+<div class="container-fluid">
+    <div class="top-toolbar">
+        {{!-- Left side --}}
+        <div class="top-toolbar-section col-6">
+            <h1>
+                SwiftMailer options
+            </h1>
+        </div>
+        {{!-- Right side --}}
+        <div class="top-toolbar-section col-6 text-right">
+            <button type="button" class="submit btn btn-primary">
+                {{L 'save'}}
+            </button>
+        </div>
+    </div>
+</div>
+
+{{!-- Main container --}}
+<div class="main-container stretch-down">
+    <div class="row mt-2">
+        <div class="col-lg-6 push-lg-3 col-md-8 push-md-2 col-sm-10 push-sm-1">
+            <form class="swift-options" method="POST" autocomplete="off">
+                <div class="form-group">
+                    <label for="SwiftMailer.transport">Transport</label>
+                    <select class="form-control" name="SwiftMailer.transport" id="transport">
+                        {{#each transports}}
+                        <option value="{{this}}"{{#is this actualTransport}} selected{{/is}}>{{this}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                <div class="smtp-options invisible">
+                    <label>SMTP Options</label>
+                    <div class="form-group">
+                        <label for="SwiftMailer.host">Host</label>
+                        <input class="form-control" type="text" name="SwiftMailer.host" value="{{SwiftOptions.host}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="SwiftMailer.port">Port</label>
+                        <input class="form-control" type="number" name="SwiftMailer.port" value="{{SwiftMailer.port}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="SwiftMailer.user">User</label>
+                        <input class="form-control" type="text" name="SwiftMailer.user" value="{{SwiftMailer.user}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="SwiftMailer.pass">Password</label>
+                        <input class="form-control" type="password" name="SwiftMailer.pass" value="{{SwiftMailer.pass}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="SwiftMailer.encryption">Encryption</label>
+                        <select class="form-control" type="number" name="SwiftMailer.encryption">
+                            <option value=""></option>
+                            <option value="ssl">SSL</option>
+                            <option value="tls">TLS</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{{> footer}}

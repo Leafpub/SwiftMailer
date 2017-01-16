@@ -1,0 +1,24 @@
+{
+    "name": "SwiftMailer",
+    "description": "Send Leafpub Mails with SwiftMailer",
+    "version": "1.0.0",
+    "requires": "1.0.0",
+    "author": "Marc",
+    "license": "GPLv3",
+    "link": "https://www.leafpub.org/",
+    "isAdminPlugin": true,
+    "isMiddleware": false,
+    "image": "",
+    "routes": [
+        {
+            "method": "GET",
+            "uri": "/options",
+            "cb": "Leafpub\\Plugins\\SwiftMailer\\Plugin::showOptions"
+        },
+        {
+            "method": "POST",
+            "uri": "/options",
+            "cb": "Leafpub\\Plugins\\SwiftMailer\\Plugin::saveOptions"
+        }
+    ]
+}
